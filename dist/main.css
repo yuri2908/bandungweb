@@ -9719,7 +9719,7 @@ footer {
   transition: all 0.3s ease;
   padding: 15px 0; }
   .header-bottom .main-menu {
-    padding-left: 80px; }
+    padding-left: 100px; }
     .header-bottom .main-menu li {
       padding-right: 35px;
       position: relative; }
@@ -10674,7 +10674,7 @@ footer {
   border: 1.5px solid rgba(152, 155, 167, 0.5); }
 
 .customersreview {
-  padding-bottom: 100px; }
+  padding: 100px 0px 100px 0px; }
   .customersreview-wrapper {
     position: relative; }
     .customersreview-wrapper .slick-dots {
@@ -10946,8 +10946,8 @@ footer {
 
 .product-item-info span {
   font-size: 16px;
-  font-weight: 400;
-  color: #1A2224;
+  font-weight: 800;
+  color: #38b6ff;
   display: inline-block;
   margin-right: 2px; }
 
