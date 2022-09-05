@@ -10355,7 +10355,9 @@ footer {
       margin-top: 30px; } }
 
 .about-area {
-  padding: 100px 0px 100px 0px; }
+  padding: 100px 0px 100px 0px; 
+  background-color: rgba(239, 239, 239, 0.4);
+  }
   .about-area-content-img img {
     border-radius: 86px 24px 0 24px; }
   .about-area-content-text h3 {
