@@ -28,6 +28,56 @@
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+.floating_btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  z-index: 1000;
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+.contact_icon {
+  background-color: #42db87;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size:30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translatey(0px);
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 #42db87;
+  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  font-weight: normal;
+  font-family: sans-serif;
+  text-decoration: none !important;
+  transition: all 300ms ease-in-out;
+}
+
+
+.text_icon {
+  margin-top: 8px;
+  color: #707070;
+  font-size: 13px;
+}
 	</style>
 <meta property="og:title" content="Bandung Web" />
 <meta property="og:description" content="Jasa Pembuatan Website Bandung Dengan Harga Murah Tetapi Berkualitas Dengan Desain Modern Dan Mobile User Friendly" />
@@ -1175,22 +1225,16 @@
         </div>
     </footer>
     <!-- Footer -->
-<!-- GetButton.io widget -->
-<script>
-    (function () {
-        var options = {
-            whatsapp: "62895405848899", // WhatsApp number
-            call_to_action: "Whatsapp Kami", // Call to action
-            button_color: "#FF6550", // Color of button
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->	
+<div class="floating_btn">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a target="_blank" href="https://wa.me/62895405848899?text=Saya%20tertarik%20untuk%20membuat%20website%20di%20bandungweb">
+      <div class="contact_icon">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </a>
+    <p class="text_icon">WhatsApp</p>
+  </div>
+
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
